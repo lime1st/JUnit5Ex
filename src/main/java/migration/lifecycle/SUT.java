@@ -1,6 +1,5 @@
-package basic.lifecycle;
+package migration.lifecycle;
 
-//  System Under Test, 테스트 대상 시스템
 public class SUT {
 
     private final String systemName;
