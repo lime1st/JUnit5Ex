@@ -21,23 +21,23 @@ public class HamcrestListTest {
     @BeforeEach
     public void setUp() {
         values = new ArrayList<>();
-        values.add("John");
-        values.add("Michael");
-        values.add("Edwin");
-//        values.add("Oliver");
-//        values.add("Jack");
-//        values.add("Harry");
+//        values.add("John");
+//        values.add("Michael");
+//        values.add("Edwin");
+        values.add("Oliver");
+        values.add("Jack");
+        values.add("Harry");
     }
 
     @Test
-    @DisplayName("Hamcrest를 사용하지 않아 실패 정보를 자세히 표현하지 못하는 테스트")
+    @DisplayName("Hamcrest 를 사용하지 않아 실패 정보를 자세히 표현하지 못하는 테스트")
     public void testListWithoutHamcrest() {
         assertEquals(3, values.size());
         assertTrue(values.contains("Oliver") || values.contains("Jack") || values.contains("Harry"));
     }
 
     @Test
-    @DisplayName("Hamcrest를 사용해서 자세한 실패 정보를 나타내는 테스트")
+    @DisplayName("Hamcrest 를 사용해서 자세한 실패 정보를 나타내는 테스트")
     public void testListWithHamcrest() {
         assertThat(values, hasSize(3));
         assertThat(values, hasItem(anyOf(equalTo("Oliver"), equalTo("Jack"),

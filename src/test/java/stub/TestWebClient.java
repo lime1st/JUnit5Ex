@@ -30,7 +30,7 @@ public class TestWebClient {
 
     @BeforeAll
     public static void setUp() throws Exception {
-        Server server = new Server(8081);
+        Server server = new Server(8082);
 
         Context contentOkContext = new Context(server, "/testGetContentOk");
         contentOkContext.setHandler(new TestGetContentOkHandler());
@@ -52,7 +52,7 @@ public class TestWebClient {
 
     @Test
     public void testGetContentOk() throws MalformedURLException {
-        String workingContent = client.getContent(new URL("http://localhost:8081/testGetContentOk"));
+        String workingContent = client.getContent(new URL("http://localhost:8082/testGetContentOk"));
         assertEquals("It works", workingContent);
     }
 
