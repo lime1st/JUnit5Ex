@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @TestConfiguration
-public class FlightBuilder {
+public class TestFlightBuilder {
 
     private static final Map<String, Country> countriesMap = new HashMap<>();
 
@@ -27,7 +27,7 @@ public class FlightBuilder {
     Flight buildFlightFromCsv() throws IOException {
         Flight flight = new Flight("AA1234", 20);
         try (BufferedReader reader = new BufferedReader(
-                new FileReader("src/test/resources/flights_information.csv")
+                new FileReader("src/main/resources/flights_information.csv")
         )) {
             String line = null;
             do {

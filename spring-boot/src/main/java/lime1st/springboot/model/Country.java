@@ -1,11 +1,19 @@
 package lime1st.springboot.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 import java.util.Objects;
 
+@Entity
 public class Country {
 
-    private String name;
+    @Id
     private String codeName;
+    private String name;
+
+    public Country() {
+    }
 
     public Country(String name, String codeName) {
         this.name = name;

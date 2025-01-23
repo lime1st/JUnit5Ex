@@ -1,6 +1,6 @@
 package lime1st.springboot;
 
-import lime1st.springboot.beans.FlightBuilder;
+import lime1st.springboot.beans.TestFlightBuilder;
 import lime1st.springboot.model.Flight;
 import lime1st.springboot.model.Passenger;
 import lime1st.springboot.registration.PassengerRegistrationEvent;
@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SpringBootTest
-@Import(FlightBuilder.class)
+@Import(TestFlightBuilder.class)
 public class FlightTest {
 
     @Autowired
