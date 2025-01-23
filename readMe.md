@@ -9,6 +9,8 @@ ide: intelij IDEA
 
 architecture: 3장
 basic: 2장
+extensions: 14장
+gui: 15장
 incontainer: 9장
 migration: 4장
 mock: 8장
