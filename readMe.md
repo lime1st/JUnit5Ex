@@ -7,6 +7,7 @@ ide: intelij IDEA
 
 책 공부하며 이것 저것 테스트 및 중요 내용 정리 등
 
+### ex (1_15)
 architecture: 3장
 basic: 2장
 extensions: 14장
