@@ -1,4 +1,4 @@
-//package incontainer.airport;
+package incontainer.airport;//package incontainer.airport;
 //
 //import org.jboss.arquillian.container.test.api.Deployment;
 //import org.jboss.arquillian.junit.Arquillian;
