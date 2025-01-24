@@ -21,4 +21,4 @@ stub: 7장
 ### 모듈로 나눔
 spring-junitx: 16장
 spring-boot: 17장, 18장
-database: 19장
+spring-hibernate, database: 19장
