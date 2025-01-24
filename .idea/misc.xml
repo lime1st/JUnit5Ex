@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/database/pom.xml" />
         <option value="$PROJECT_DIR$/spring-hibernate/pom.xml" />
         <option value="$PROJECT_DIR$/tdd/pom.xml" />
+        <option value="$PROJECT_DIR$/bdd/pom.xml" />
       </list>
     </option>
   </component>
